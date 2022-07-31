@@ -1,0 +1,100 @@
+@import"./_variable.scss";
+
+.projects-banner{
+    .img-banner{
+        background-image: url(../images/projects-banner.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 10%;
+        height: 250px;
+    }
+
+    .overlay {
+        position: absolute;
+        background-color: rgba(65, 155, 155, 0.5);
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.projects-details3{
+    .card{
+        .card-body{
+            .card-title{
+                font-weight: 800;
+                color: $main-color;
+            }
+        }
+    }
+
+}
+
+
+.our-works{
+.card{
+    position: relative;
+    .title{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        &:hover,
+        &:focus{
+            cursor: pointer;
+            background-color:$main-color;
+            color: $custom-color;
+            transition-property: color,background-color;
+            transition-duration: 0.5s;
+        }
+
+    }
+    .card-title{
+        font-weight: bold !important;
+        font-size: 24px;
+    }
+}
+}
+
+
+
+
+.btn,button{
+    &:focus,
+    &:active{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+
+#image-gallery{
+    .modal-footer{
+        display: block;
+
+    }
+}
+
+.thumb{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 576px){
+    .projects-details3{
+        .thumb{
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+    }
+}
